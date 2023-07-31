@@ -1,31 +1,14 @@
 import BackgroundWithImage from '../BackgroundWithImage/BackgroundWithImage';
-import { ContainerHeader, Navegation, Logo, ContainerList, ItemList, TextContent } from './style';
+import { TextContent } from './style';
 import Button from '../Button/Button';
 import Fundo from '../../assets/Fundo-Header.png';
+import Navbar from '../Navbar/Navbar';
 
 function Header({ UrlLogo }) {
     return (
         <>
             <BackgroundWithImage imageBackground={Fundo} altura={'100vh'}>
-
-                <ContainerHeader>
-                    <Logo>
-                        <img src={UrlLogo}></img>
-                    </Logo>
-
-                    <Navegation>
-                        <ContainerList>
-                            <ItemList><a href='\'>V4 é Marketing</a></ItemList>
-                            <ItemList><a href='\'>Educação</a></ItemList>
-                            <ItemList><a href='\'>Para Clientes</a></ItemList>
-                            <ItemList><a href='\'>Cases V4</a></ItemList>
-                            <ItemList><a href='\'>Sobre</a></ItemList>
-                            <ItemList><a href='\'>Blog</a></ItemList>
-                            <ItemList><a href='\'>Conteúdos</a></ItemList>
-                        </ContainerList>
-                    </Navegation>
-                </ContainerHeader>
-
+            <Navbar UrlLogo={UrlLogo}/>
                 <TextContent>
                     <h1>Marketing Digital que </h1>
                     <span>Funciona</span>

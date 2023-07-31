@@ -12,11 +12,10 @@ export const ImagePartners = styled.div`
     img {
         height: 100%;
         width: 250px;
-
     }
 `
 export const TextPartners = styled.div`
-    margin: 40px;
+    margin: 20px;
 
 `
 export const Name = styled.div`
@@ -37,5 +36,5 @@ export const Description = styled.div`
     }
 `
 export const Logo = styled.div`
-    margin-top: 110px;
+    margin-top: 30px;
 `

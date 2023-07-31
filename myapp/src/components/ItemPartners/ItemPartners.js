@@ -1,9 +1,9 @@
 import { ContainerItemPartners, ImagePartners, TextPartners, Name, About, Description, Logo } from "./style"
 
-function ItemPartners({ imageClient, NameClient, AboutClient, LogoBrand }) {
+function ItemPartners({ imageClient, NameClient, AboutClient, LogoBrand, BackgroundColor }) {
     return (
         <>
-            <ContainerItemPartners backgroundColor={"rgba(45, 38, 38, 1)"}>
+            <ContainerItemPartners backgroundColor={BackgroundColor}>
                 <ImagePartners>
                     <img src={imageClient} />
                 </ImagePartners>

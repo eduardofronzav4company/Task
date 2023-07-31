@@ -4,6 +4,7 @@ import Brand  from './components/Brand/Brand';
 import Graphic from './components/Graphic/Graphic';
 import Header from './components/Header/Header';
 import Information from './components/Information/Information';
+import News from './components/News/News';
 import Offer from './components/Offer/Offer';
 import Partners from './components/Partners/Partners';
 import V4X from './components/V4X/V4X';
@@ -24,6 +25,7 @@ function App() {
       <Graphic />
       <V4X />
       <Partners />
+      <News />
    </>
   );
 }

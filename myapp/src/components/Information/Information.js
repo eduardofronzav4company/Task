@@ -1,15 +1,44 @@
-import { ContainerInformation, ContentInformation} from './style';
-import ItemInformation from '../ItemInformation/ItemInformation';
+import { ContainerInformation, ContainerItemInformation, ContentInformation, NumberItemInfo, TextItemInfo } from './style';
+
+let InformationItem = [
+    {
+        number: "4568",
+        text: "clientes ativos"
+    },
+    {
+        number: "221",
+        text: "escritorios pelo Brasil"
+    },
+    {
+        number: "822",
+        text: "milhos investidos em media digital"
+    },
+    {
+        number: "2bi",
+        text: "de faturamento gerados para clientes"
+    },
+]
 
 function Information() {
     return (
         <>
             <ContainerInformation>
                 <ContentInformation>
-                    <ItemInformation  NumberOfItem={"4568"} textOfItem={"clientes ativos"} />
-                    <ItemInformation  NumberOfItem={"221"} textOfItem={"escritorios pelo Brasil"} />
-                    <ItemInformation  NumberOfItem={"822"} textOfItem={"milhos investidos em media digital"} />
-                    <ItemInformation  NumberOfItem={"2bi"} textOfItem={"de faturamento gerados para clientes"} />
+                    {InformationItem.map((item, index) => {
+                        const { number, text } = item;
+                        return (
+                            <ContainerItemInformation key={index}>
+                                <NumberItemInfo>
+                                    {number}
+                                </NumberItemInfo>
+
+                                <TextItemInfo>
+                                    {text}
+                                </TextItemInfo>
+                            </ContainerItemInformation>
+                        )
+                    })}
+
                 </ContentInformation>
             </ContainerInformation>
         </>

@@ -9,38 +9,125 @@ import foto25 from '../../assets/25.png'
 import foto26 from '../../assets/26.png'
 import foto27 from '../../assets/27.png'
 
+let Imagens = [
+    {
+        image: foto19,
+        legenda: "legenda"
+    },
+    {
+        image: foto20,
+        legenda: "legenda"
+    },
+    {
+        image: foto21,
+        legenda: "legenda"
+    },
+    {
+        image: foto22,
+        legenda: "legenda"
+    },
+    {
+        image: foto23,
+        legenda: "legenda"
+    },
+    {
+        image: foto24,
+        legenda: "legenda"
+    },
+    {
+        image: foto25,
+        legenda: "legenda"
+    },
+    {
+        image: foto26,
+        legenda: "legenda"
+    },
+    {
+        image: foto27,
+        legenda: "legenda"
+    },
+    {
+        image: foto19,
+        legenda: "legenda"
+    },
+    {
+        image: foto20,
+        legenda: "legenda"
+    },
+    {
+        image: foto21,
+        legenda: "legenda"
+    },
+    {
+        image: foto22,
+        legenda: "legenda"
+    },
+    {
+        image: foto23,
+        legenda: "legenda"
+    },
+    {
+        image: foto24,
+        legenda: "legenda"
+    },
+    {
+        image: foto25,
+        legenda: "legenda"
+    },
+    {
+        image: foto26,
+        legenda: "legenda"
+    },
+    {
+        image: foto27,
+        legenda: "legenda"
+    },
+    {
+        image: foto19,
+        legenda: "legenda"
+    },
+    {
+        image: foto20,
+        legenda: "legenda"
+    },
+    {
+        image: foto21,
+        legenda: "legenda"
+    },
+    {
+        image: foto22,
+        legenda: "legenda"
+    },
+    {
+        image: foto23,
+        legenda: "legenda"
+    },
+    {
+        image: foto24,
+        legenda: "legenda"
+    },
+    {
+        image: foto25,
+        legenda: "legenda"
+    },
+    {
+        image: foto26,
+        legenda: "legenda"
+    },
+    {
+        image: foto27,
+        legenda: "legenda"
+    },
+]
 
 export function Brand() {
     return (
         <>
             <ContainerBrand>
-                    <ItemsBrand><img src={foto19} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto20} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto21} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto22} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto23} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto24} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto25} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto26} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto27} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto19} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto20} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto21} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto22} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto23} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto24} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto25} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto26} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto27} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto19} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto20} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto21} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto22} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto23} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto24} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto25} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto26} alt='legenda'/></ItemsBrand>
-                    <ItemsBrand><img src={foto27} alt='legenda'/></ItemsBrand>
+                {Imagens.map(( item, index) =>{
+                    const {image, legenda} = item;
+                    return <ItemsBrand key={index}><img src={image} alt={legenda}/></ItemsBrand>
+                })}
             </ContainerBrand>
         </>
     )
